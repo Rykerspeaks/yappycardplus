@@ -1,9 +1,43 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="refresh" content="0; url=https://example.com">
+<meta charset="UTF-8">
+<title>Redirecting</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+padding-top: 100px;
+}
+
+#countdown {
+font-size: 60px;
+color: #333;
+}
+</style>
 </head>
+
 <body>
-Redirecting...
+
+<h1>Welcome</h1>
+<p>You will be redirected in...</p>
+
+<div id="countdown">5</div>
+
+<script>
+let seconds = 5;
+
+let redirectLink = "https://example.com"; // Put your changing link here
+
+let timer = setInterval(function() {
+seconds--;
+document.getElementById("countdown").innerHTML = seconds;
+
+if (seconds <= 0) {
+clearInterval(timer);
+window.location.href = redirectLink;
+}
+}, 1000);
+</script>
+
 </body>
 </html>
