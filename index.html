@@ -1,46 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Redirecting</title>
-<style>
-body {
-font-family: Arial, sans-serif;
-text-align: center;
-padding-top: 100px;
-}
-
-#countdown {
-font-size: 60px;
-color: #333;
-}
-</style>
-<img src="ChatGPT_Image_Aug_3__2026__06_35_37_PM-removebg-preview.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yappy Card</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h1>Welcome to Ryker Speaks</h1>
-<h2Thanks for Tuning In Today!</h2>
-<p>You will be redirected in...</p>
+<header>
+    <h1>🐶 Yappy Card</h1>
+    <p>The NFC Card That Makes Every Tap Memorable.</p>
+</header>
 
-<div id="countdown">10</div>
+<section class="hero">
+    <h2>Simple. Funny. Powerful.</h2>
+    <p>Choose the card that fits your style.</p>
+</section>
 
-<script>
-let seconds = 10;
+<div class="cards">
 
-let redirectLink = "https://boulderbugle.com/3t2tGeMt"; // Put your changing link here
+    <div class="card plus">
+        <h2>Yappy Card Plus</h2>
+        <div class="price">$9.99</div>
 
-let timer = setInterval(function() {
-seconds--;
-document.getElementById("countdown").innerHTML = seconds;
+        <ul>
+            <li>✅ Always Rickrolls</li>
+            <li>✅ No setup required</li>
+            <li>✅ Instant laughs</li>
+            <li>❌ Cannot change link</li>
+            <li>❌ No disable mode</li>
+        </ul>
 
-if (seconds <= 0) {
-clearInterval(timer);
-window.location.href = redirectLink;
-}
-}, 1000);
-</script>
+        <button>Get Plus</button>
+    </div>
+
+    <div class="card max">
+        <div class="badge">BEST VALUE</div>
+
+        <h2>Yappy Card Max</h2>
+        <div class="price">$19.99</div>
+
+        <ul>
+            <li>✅ Changeable NFC Link</li>
+            <li>✅ Fresh Premium Design</li>
+            <li>✅ Disable Card Mode</li>
+            <li>✅ Rickroll Anytime</li>
+            <li>✅ Future Updates</li>
+        </ul>
+
+        <button>Get Max</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>Made for laughs. Tap responsibly.</p>
+</footer>
 
 </body>
 </html>
