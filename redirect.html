@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Redirecting</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+text-align: center;
+padding-top: 100px;
+}
+
+#countdown {
+font-size: 60px;
+color: #333;
+}
+</style>
+<img src="ChatGPT_Image_Aug_3__2026__06_35_37_PM-removebg-preview.png">
+</head>
+
+<body>
+
+<h1>Welcome to Ryker Speaks</h1>
+<h2Thanks for Tuning In Today!</h2>
+<p>You will be redirected in...</p>
+
+<div id="countdown">10</div>
+
+<script>
+let seconds = 10;
+
+let redirectLink = "https://boulderbugle.com/3t2tGeMt"; // Put your changing link here
+
+let timer = setInterval(function() {
+seconds--;
+document.getElementById("countdown").innerHTML = seconds;
+
+if (seconds <= 0) {
+clearInterval(timer);
+window.location.href = redirectLink;
+}
+}, 1000);
+</script>
+
+</body>
+</html>
